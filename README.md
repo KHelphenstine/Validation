@@ -15,5 +15,3 @@ If the data does not validate, then do the following:
 Return to the index.php page.
 On the index.php display an error message that is appropriate for the mistake.
 Retain (in the input boxes) the original data entered in the fields so that the user doesn't have to completely retype everything.
-
-http://khelphenstine.freesite.vip/validation/
