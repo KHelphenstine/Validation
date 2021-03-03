@@ -6,7 +6,7 @@
 	$submit = $_POST['submit'];
 	
 	//validate email, phone & zip
-	if((filter_var($email)) && (preg_match('/[(]\d{3}[)]\d{3}-\d{4}/', $phone)) && (preg_match('/\d{5}/', $zip)))
+	if((filter_var($email, FILTER_VALIDATE_EMAIL)) && (preg_match('/^[(]\d{3}[)]\d{3}-\d{4}$/', $phone)) && (preg_match('/^\d{5}$/', $zip)))
 	{
 		echo "<h2>Thank you for providing the following data:<br></h2><p id='data'>Email: $email<br> Phone Number: $phone<br> Zip Code: $zip</p>";
 	}
